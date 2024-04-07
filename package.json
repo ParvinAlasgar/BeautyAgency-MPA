@@ -1,0 +1,22 @@
+{
+  "name": "beautyagency-mpa",
+  "version": "1.0.0",
+  "description": "This is a web multi page application.",
+  "main": "index.js",
+  "scripts": {
+    "build-css": "node-sass assets/sass/main.scss -o assets/css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ParvinAlasgar/BeautyAgency-MPA.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ParvinAlasgar/BeautyAgency-MPA/issues"
+  },
+  "homepage": "https://github.com/ParvinAlasgar/BeautyAgency-MPA#readme",
+  "dependencies": {
+    "node-sass": "^9.0.0"
+  }
+}

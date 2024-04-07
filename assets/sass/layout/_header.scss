@@ -1,0 +1,90 @@
+#header {
+  left: 0;
+  z-index: 10 !important;
+  .header-top {
+    height: 3rem;
+    .social-links {
+      li {
+        &:nth-child(1) i {
+          color: #3b5998 !important;
+        }
+        &:nth-child(2) i {
+          color: #55acee !important;
+        }
+        &:nth-child(3) i {
+          color: #0976b4 !important;
+        }
+        &:nth-child(4) i {
+          color: red !important;
+        }
+        i {
+          transition: color 0.3s;
+          &:hover {
+            color: #fff !important;
+          }
+        }
+      }
+    }
+    .login {
+      li {
+        transition: background-color 0.3s;
+        cursor: pointer;
+        &:hover {
+          background-color: $firstColor;
+          i {
+            color: #fff !important;
+          }
+        }
+      }
+    }
+  }
+  .header-bottom {
+    .navbar {
+      .menu-item {
+        a {
+          transition: color 0.3s;
+        }
+
+        .menu-item {
+          cursor: pointer;
+          &:hover {
+            a {
+              color: $firstColor !important;
+            }
+          }
+        }
+        &:hover {
+          .menu-sub {
+            opacity: 1;
+          }
+        }
+        .menu-sub {
+          top: 1.5rem;
+          left: 0;
+          width: 19rem;
+          opacity: 0;
+          transition: opacity 0.3s;
+        }
+      }
+    }
+    .contact {
+      color: $firstColor;
+    }
+    @include for-small-devices {
+      .menu-main {
+        column-gap: 0.6rem !important;
+        font-size: 0.7rem;
+        .menu-sub {
+          width: 10rem !important;
+        }
+        .menu-item {
+          &:nth-child(6) {
+            .menu-sub {
+              left: -2rem !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}
