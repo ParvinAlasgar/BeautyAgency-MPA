@@ -115,5 +115,24 @@
       @include button(#fff, $firstColor, #000, $firstColor);
     }
   }
- 
+  // Subscribe
+  #subscribe {
+    padding: 13rem 0;
+    background-image: url(../images/Depositphotos_38755349_original.jpg);
+    @extend %bckImg;
+    h2 {
+      font-size: 3rem;
+      span {
+        color: $firstColor;
+      }
+    }
+    input::placeholder {
+      color: gray;
+    }
+    @include for-small-devices {
+      input {
+        width: 15rem !important;
+      }
+    }
+  }
 }

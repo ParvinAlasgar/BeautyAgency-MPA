@@ -1,7 +1,7 @@
 html {
   font-size: 1rem; }
 
-#main #about {
+#main #about, #main #subscribe {
   background-repeat: no-repeat;
   background-size: cover;
   background-size: cover cover; }
@@ -151,3 +151,15 @@ html {
       #main #about a:hover {
         color: #000 !important;
         background-color: #e0006c !important; }
+  #main #subscribe {
+    padding: 13rem 0;
+    background-image: url(../images/Depositphotos_38755349_original.jpg); }
+    #main #subscribe h2 {
+      font-size: 3rem; }
+      #main #subscribe h2 span {
+        color: #e0006c; }
+    #main #subscribe input::placeholder {
+      color: gray; }
+    @media only screen and (max-width: 576px) {
+      #main #subscribe input {
+        width: 15rem !important; } }
