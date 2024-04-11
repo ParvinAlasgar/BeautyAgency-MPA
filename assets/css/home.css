@@ -51,8 +51,34 @@ html {
         left: -2rem !important; } }
 
 #main {
-  margin-top: 6.5rem;
-  background-color: red; }
+  margin-top: 6.5rem; }
   @media (max-width: 992px) {
     #main {
-      margin-top: 4rem; } }
+      margin-top: 5rem; } }
+  #main #models .model img {
+    cursor: pointer; }
+  #main #models .model .model-content {
+    background-color: rgba(224, 0, 108, 0.8);
+    bottom: 0;
+    transition: transform 0.3s;
+    transform: translateY(50%);
+    opacity: 0; }
+    #main #models .model .model-content a {
+      transition: color 0.3s; }
+      #main #models .model .model-content a:hover {
+        color: #000 !important; }
+  #main #models .model:hover .model-content {
+    transform: translateY(0);
+    opacity: 1; }
+  @media (max-width: 768px) {
+    #main #models ul {
+      column-gap: 1rem !important;
+      flex-wrap: nowrap; } }
+  @media only screen and (max-width: 576px) {
+    #main #models {
+      font-size: 0.5rem; }
+      #main #models h2 {
+        font-size: 1rem !important; }
+      #main #models ul {
+        column-gap: 1rem !important;
+        flex-wrap: nowrap; } }

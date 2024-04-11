@@ -1,2 +1,52 @@
 // Import main sass
 @import "../main";
+// Main;
+#main {
+  margin-top: 6.5rem;
+  @include for-large-devices {
+    margin-top: 5rem;
+  }
+  // Models
+  #models {
+    .model {
+      img {
+        cursor: pointer;
+      }
+      .model-content {
+        background-color: rgba($color: $firstColor, $alpha: 0.8);
+        bottom: 0;
+        transition: transform 0.3s;
+        transform: translateY(50%);
+        opacity: 0;
+        a {
+          transition: color 0.3s;
+          &:hover {
+            color: #000 !important;
+          }
+        }
+      }
+      &:hover {
+        .model-content {
+          transform: translateY(0);
+          opacity: 1;
+        }
+      }
+    }
+    @include for-medium-devices {
+      ul {
+        column-gap: 1rem !important;
+        flex-wrap: nowrap;
+      }
+    }
+    @include for-small-devices {
+      font-size: 0.5rem;
+      h2 {
+        font-size: 1rem !important;
+      }
+      ul {
+        column-gap: 1rem !important;
+        flex-wrap: nowrap;
+      }
+    }
+  }
+}
