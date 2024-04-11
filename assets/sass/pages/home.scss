@@ -110,4 +110,19 @@
       @include button(#fff, $firstColor, #000, $firstColor);
     }
   }
+  // About
+  #about {
+    background-image: url(../images/section-background-1.jpg);
+    @extend %bckImg;
+    height: 55rem;
+    h2 {
+      font-size: 3rem;
+    }
+    h4 {
+      color: $firstColor;
+    }
+    a {
+      @include button(#fff, $firstColor, #000, $firstColor);
+    }
+  }
 }

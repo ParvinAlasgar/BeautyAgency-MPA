@@ -12,6 +12,11 @@ html {
   opacity: 0;
   transition: opacity 0.3s; }
 
+#main #about {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-size: cover cover; }
+
 #header {
   left: 0;
   z-index: 10 !important; }
@@ -132,3 +137,18 @@ html {
     #main #allModels a:hover {
       color: #000 !important;
       background-color: #e0006c !important; }
+  #main #about {
+    background-image: url(../images/section-background-1.jpg);
+    height: 55rem; }
+    #main #about h2 {
+      font-size: 3rem; }
+    #main #about h4 {
+      color: #e0006c; }
+    #main #about a {
+      color: #fff !important;
+      background-color: #e0006c !important;
+      padding: 0.5rem 1.7rem;
+      transition: all 0.3s; }
+      #main #about a:hover {
+        color: #000 !important;
+        background-color: #e0006c !important; }
