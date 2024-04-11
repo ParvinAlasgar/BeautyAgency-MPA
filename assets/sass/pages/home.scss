@@ -84,4 +84,30 @@
       height: 6rem;
     }
   }
+  // All Models
+  #allModels {
+    .model {
+      .model-img {
+        cursor: pointer;
+        @extend %afterBeforeDiv;
+      }
+      .model-content {
+        transition: background-color 0.3s;
+      }
+      &:hover {
+        .model-img::after {
+          opacity: 0.6;
+        }
+        .model-content {
+          background-color: $firstColor;
+          h5 {
+            color: #000 !important;
+          }
+        }
+      }
+    }
+    a {
+      @include button(#fff, $firstColor, #000, $firstColor);
+    }
+  }
 }

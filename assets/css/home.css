@@ -1,6 +1,17 @@
 html {
   font-size: 1rem; }
 
+#main #allModels .model .model-img::after {
+  content: " ";
+  position: absolute;
+  background: rgba(224, 0, 108, 0.4);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.3s; }
+
 #header {
   left: 0;
   z-index: 10 !important; }
@@ -103,3 +114,21 @@ html {
   #main #agency img {
     width: 6rem;
     height: 6rem; }
+  #main #allModels .model .model-img {
+    cursor: pointer; }
+  #main #allModels .model .model-content {
+    transition: background-color 0.3s; }
+  #main #allModels .model:hover .model-img::after {
+    opacity: 0.6; }
+  #main #allModels .model:hover .model-content {
+    background-color: #e0006c; }
+    #main #allModels .model:hover .model-content h5 {
+      color: #000 !important; }
+  #main #allModels a {
+    color: #fff !important;
+    background-color: #e0006c !important;
+    padding: 0.5rem 1.7rem;
+    transition: all 0.3s; }
+    #main #allModels a:hover {
+      color: #000 !important;
+      background-color: #e0006c !important; }
