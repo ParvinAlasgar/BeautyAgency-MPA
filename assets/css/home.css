@@ -89,12 +89,12 @@ html {
         flex-wrap: nowrap; } }
   #main #banner .banner {
     border-width: 0.3rem !important; }
-    #main #banner .banner a:hover::before {
-      opacity: 1; }
-    #main #banner .banner a::before {
+    #main #banner .banner a:hover::after {
+      opacity: 0.4; }
+    #main #banner .banner a::after {
       content: " ";
       position: absolute;
-      background: rgba(224, 0, 108, 0.2);
+      background: rgba(224, 0, 108, 0.5);
       top: 0;
       left: 0;
       width: 100%;
@@ -113,7 +113,7 @@ html {
     #main #allModels .model .model-img::after {
       content: " ";
       position: absolute;
-      background: rgba(224, 0, 108, 0.4);
+      background: rgba(224, 0, 108, 0.5);
       top: 0;
       left: 0;
       width: 100%;

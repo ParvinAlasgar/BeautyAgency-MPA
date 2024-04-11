@@ -1,13 +1,13 @@
-@mixin afterBeforeDiv($bckColor: $firstColor, $opacity: 0.4) {
+@mixin afterBeforeDiv($bckColor: $firstColor, $bckOpacity: 0.5, $opacity: 0) {
   &::after {
     content: " ";
     position: absolute;
-    background: rgba($color: $bckColor, $alpha: $opacity);
+    background: rgba($color: $bckColor, $alpha: $bckOpacity);
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    opacity: 0;
+    opacity: $opacity;
     transition: opacity 0.3s;
   }
 }
