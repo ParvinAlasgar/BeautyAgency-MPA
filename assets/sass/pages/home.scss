@@ -89,7 +89,7 @@
     .model {
       .model-img {
         cursor: pointer;
-        @extend %afterBeforeDiv;
+        @include afterBeforeDiv;
       }
       .model-content {
         transition: background-color 0.3s;
