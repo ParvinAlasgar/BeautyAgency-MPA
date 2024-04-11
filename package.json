@@ -4,7 +4,7 @@
   "description": "This is a web multi page application.",
   "main": "index.js",
   "scripts": {
-    "build-css": "node-sass assets/sass/main.scss -o assets/css -w"
+    "build-css": "node-sass assets/sass/pages/*.scss -o assets/css -w"
   },
   "repository": {
     "type": "git",
