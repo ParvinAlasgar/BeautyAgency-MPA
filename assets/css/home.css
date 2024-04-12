@@ -37,13 +37,13 @@ html {
     #header .header-bottom .navbar .menu-item .menu-item:hover a {
       color: #e0006c !important; }
   #header .header-bottom .navbar .menu-item:hover .menu-sub {
-    opacity: 1; }
+    opacity: 1;
+    visibility: visible; }
   #header .header-bottom .navbar .menu-item .menu-sub {
     top: 1.5rem;
     left: 0;
     width: 19rem;
-    opacity: 0;
-    transition: opacity 0.3s; }
+    visibility: hidden; }
   #header .header-bottom .contact {
     color: #e0006c; }
   @media only screen and (max-width: 576px) {
@@ -84,9 +84,15 @@ html {
       font-size: 0.5rem; }
       #main #models h2 {
         font-size: 1rem !important; }
-      #main #models ul {
-        column-gap: 1rem !important;
-        flex-wrap: nowrap; } }
+      #main #models .model:hover .model-content {
+        transform: translateY(1rem); }
+        #main #models .model:hover .model-content h2 {
+          font-size: 0.5rem !important; }
+        #main #models .model:hover .model-content ul {
+          row-gap: 0.2rem; }
+          #main #models .model:hover .model-content ul li {
+            column-gap: 0.5rem;
+            flex-direction: row !important; } }
   #main #banner .banner {
     border-width: 0.3rem !important; }
     #main #banner .banner a:hover::after {
@@ -163,6 +169,10 @@ html {
     @media only screen and (max-width: 576px) {
       #main #subscribe input {
         width: 15rem !important; } }
+  #main #topModels .content h2 {
+    font-size: 3rem; }
+  #main #topModels .content h4 {
+    color: #e0006c; }
   #main #topModels .model img {
     cursor: pointer; }
   #main #topModels .model .model-content {

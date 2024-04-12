@@ -56,14 +56,14 @@
         &:hover {
           .menu-sub {
             opacity: 1;
+            visibility: visible;
           }
         }
         .menu-sub {
           top: 1.5rem;
           left: 0;
           width: 19rem;
-          opacity: 0;
-          transition: opacity 0.3s;
+          visibility: hidden;
         }
       }
     }
