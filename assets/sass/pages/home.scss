@@ -135,4 +135,53 @@
       }
     }
   }
+  // TopModels
+  #topModels {
+    .model {
+      img {
+        cursor: pointer;
+      }
+      .model-content {
+        background: rgba($color: $firstColor, $alpha: 0.8);
+        top: 0;
+        width: 80%;
+        height: 100%;
+        transition: transform 0.5s;
+        transform: translateX(-17rem);
+        i {
+          border: 0.1rem solid #fff;
+          transition: all 0.5s;
+          &:hover {
+            background-color: transparent !important;
+            color: #fff !important;
+            border: 0.1rem solid #fff;
+          }
+        }
+      }
+      &:hover {
+        .model-content {
+          transform: translateX(0);
+        }
+      }
+      @include for-large-devices {
+        ul {
+          row-gap: 1rem !important;
+        }
+      }
+      @include for-small-devices {
+        h2 {
+          font-size: 0.5rem !important;
+        }
+        ul {
+          row-gap: 0.1rem !important;
+          span {
+            font-size: 0.5rem !important;
+          }
+          a {
+            display: none;
+          }
+        }
+      }
+    }
+  }
 }
